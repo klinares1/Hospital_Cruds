@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesAdministrador">
+
+    <TextView
+        android:id="@+id/lblNumIdDAV"
+        android:layout_width="72dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="262dp"
+        android:fontFamily="serif"
+        android:text="     "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverDA"
+        app:layout_constraintStart_toEndOf="@+id/lblNumIdDA" />
+
+    <TextView
+        android:id="@+id/lblTituloDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="serif"
+        android:text="Detalles de Administrador"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNomDA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApeDA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApeDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdDA"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="261dp"
+        android:fontFamily="serif"
+        android:text="Numero de Identificación"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverDA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomDAV"
+        android:layout_width="77dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="serif"
+        android:text="    "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApeDAV"
+        app:layout_constraintStart_toEndOf="@+id/lblNomDA" />
+
+    <TextView
+        android:id="@+id/lblApeDAV"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="serif"
+        android:text="   "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDAV"
+        app:layout_constraintStart_toEndOf="@+id/lblApeDA" />
+
+    <Button
+        android:id="@+id/btnVolverDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="197dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

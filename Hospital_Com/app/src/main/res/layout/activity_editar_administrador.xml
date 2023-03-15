@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarAdministrador">
+
+    <EditText
+        android:id="@+id/edttextPassEA"
+        android:layout_width="169dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite una contraseña"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmarEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextApellidoEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus apellidos"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNumIdEA"
+        app:layout_constraintStart_toEndOf="@+id/lblApellidoEA" />
+
+    <TextView
+        android:id="@+id/lblnomEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidoEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="serif"
+        android:text="Editar administrador"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNomEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApellidoEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdEA"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:text="Numero de       identificacion"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextPassEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdEA2"
+        android:layout_width="89dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="117dp"
+        android:fontFamily="serif"
+        android:text="Contraseña:"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmarEA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNomEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus nombres"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextApellidoEA"
+        app:layout_constraintStart_toEndOf="@+id/lblnomEA" />
+
+    <EditText
+        android:id="@+id/edttextNumIdEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite u¿su ID"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextPassEA"
+        app:layout_constraintStart_toEndOf="@+id/lblNumIdEA" />
+
+    <Button
+        android:id="@+id/btnConfirmarEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginBottom="265dp"
+        android:fontFamily="serif"
+        android:onClick="actualizar"
+        android:text="Confirmar"
+        android:textColor="#FDFDFD"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

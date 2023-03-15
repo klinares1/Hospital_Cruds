@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesMedico">
+
+    <TextView
+        android:id="@+id/lblGeneroDMV"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="serif"
+        android:text="      "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverDM2"
+        app:layout_constraintStart_toEndOf="@+id/lblGeneroDM2" />
+
+    <TextView
+        android:id="@+id/lblNumIdDM2"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="serif"
+        android:text="Numero de identificación:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblEspDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblEspDMV"
+        android:layout_width="67dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="serif"
+        android:text="   "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblFechaNacDMV"
+        app:layout_constraintStart_toEndOf="@+id/lblEspDM2" />
+
+    <TextView
+        android:id="@+id/lblTituloDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="serif"
+        android:text="Detalles medico"
+        android:textColor="#FF0909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNomDMV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomDMV"
+        android:layout_width="63dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="serif"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApelDMV"
+        app:layout_constraintStart_toEndOf="@+id/lblNomDM2"
+        tools:text="   " />
+
+    <TextView
+        android:id="@+id/lblFechaNacDM2"
+        android:layout_width="96dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="serif"
+        android:text="Fecha de nacimiento:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblGeneroDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdDMV"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="serif"
+        android:text="     "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblEspDMV"
+        app:layout_constraintStart_toEndOf="@+id/lblNumIdDM2" />
+
+    <TextView
+        android:id="@+id/lblGeneroDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="serif"
+        android:text="Genero:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblApelDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApelDMV"
+        android:layout_width="65dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
+        android:text="    "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDMV"
+        app:layout_constraintStart_toEndOf="@+id/lblApelDM2" />
+
+    <TextView
+        android:id="@+id/lblEspDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="serif"
+        android:text="Especialidad"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblFechaNacDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolverDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginBottom="321dp"
+        android:fontFamily="serif"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFechaNacDMV"
+        android:layout_width="68dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="serif"
+        android:text="    "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblGeneroDMV"
+        app:layout_constraintStart_toEndOf="@+id/lblFechaNacDM2" />
+
+    <TextView
+        android:id="@+id/lblApelDM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="serif"
+        android:text="Apellidos:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDM2"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

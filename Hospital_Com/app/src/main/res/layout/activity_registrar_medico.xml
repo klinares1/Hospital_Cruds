@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarMedico">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRM"
+        app:layout_constraintEnd_toStartOf="@+id/lblTituloRM"
+        app:srcCompat="@drawable/hospital" />
+
+    <TextView
+        android:id="@+id/lblTituloRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="serif"
+        android:text="Registro de medico"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRM"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdRM"
+        android:layout_width="249dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="serif"
+        android:text="Número de identificación"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNumIdRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNumIdRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite su identificación"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextnomRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextnomRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus nombres"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidosRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApellidosRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextApellidosRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextApellidosRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus apellidos"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblEspecialidad"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblEspecialidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:fontFamily="serif"
+        android:text="Especialidad"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spEspecialidadRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spEspecialidadRM"
+        android:layout_width="261dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblGeneroRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spGeneroRM"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPasswordRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblGeneroRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="serif"
+        android:text="Género"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spGeneroRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPasswordRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:fontFamily="serif"
+        android:text="Contraseña"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttexPasswordRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttexPasswordRM"
+        android:layout_width="270dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite una contraseña para su sesion"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="57dp"
+        android:fontFamily="serif"
+        android:text="Registrar"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarAdministrador">
+
+    <TextView
+        android:id="@+id/lblApellidoRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextApellidosRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNomRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNomRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus nombres"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidoRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="serif"
+        android:text="Número de identificación"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNumIdRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNumIdRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite su identificación"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNomRM"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="serif"
+        android:text="Registro de Administradores"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRA"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRA"
+        app:layout_constraintEnd_toStartOf="@+id/textView40"
+        app:srcCompat="@drawable/hospital" />
+
+    <EditText
+        android:id="@+id/edttextApellidosRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus  apellidos"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPasswordRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistroRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="168dp"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextPassRA"
+        android:layout_width="270dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite una contraseña para su sesion"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistroRA"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPasswordRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:fontFamily="serif"
+        android:text="Contraseña"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextPassRA"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

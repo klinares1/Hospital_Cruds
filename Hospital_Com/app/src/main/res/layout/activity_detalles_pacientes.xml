@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesPacientes">
+
+    <TextView
+        android:id="@+id/lblTituloDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="serif"
+        android:text="Detalles Paciente"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNomDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolverDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="241dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRhDPV"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="127dp"
+        android:fontFamily="serif"
+        android:text="       "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverDP"
+        app:layout_constraintStart_toEndOf="@+id/lblRhDP" />
+
+    <TextView
+        android:id="@+id/lblNomDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidosDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNumIdDP"
+        android:layout_width="102dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="serif"
+        android:text="Numero de    Identificación"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblFechaNacDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApellidosDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblGeneroDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+        android:text="Género"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblRhDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRhDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="418dp"
+        android:fontFamily="serif"
+        android:text="RH"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFechaNacDP"
+        android:layout_width="104dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="serif"
+        android:text="Fecha de nacimiento:"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblGeneroDP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFechaNacDPV"
+        android:layout_width="81dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="serif"
+        android:text="       "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblGeneroDPV"
+        app:layout_constraintStart_toEndOf="@+id/lblFechaNacDP" />
+
+    <TextView
+        android:id="@+id/lblGeneroDPV"
+        android:layout_width="74dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="serif"
+        android:text="      "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblRhDPV"
+        app:layout_constraintStart_toEndOf="@+id/lblGeneroDP" />
+
+    <TextView
+        android:id="@+id/lblNumIdDPV"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="serif"
+        android:text="      "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblFechaNacDPV"
+        app:layout_constraintStart_toEndOf="@+id/lblNumIdDP" />
+
+    <TextView
+        android:id="@+id/lblApellidoDPV"
+        android:layout_width="74dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="serif"
+        android:text="       "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdDPV"
+        app:layout_constraintStart_toEndOf="@+id/lblApellidosDP" />
+
+    <TextView
+        android:id="@+id/lblNomDPV"
+        android:layout_width="76dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+        android:text="        "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidoDPV"
+        app:layout_constraintStart_toEndOf="@+id/lblNomDP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

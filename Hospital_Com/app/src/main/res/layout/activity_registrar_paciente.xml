@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarPaciente">
+
+    <TextView
+        android:id="@+id/lblTituloRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="serif"
+        android:text="Registro de paciente"
+        android:textColor="#F60000"
+        android:textColorHint="#7A7575"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRP3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumIdRP3"
+        app:layout_constraintEnd_toStartOf="@+id/lblTituloRP3"
+        app:srcCompat="@drawable/hospital" />
+
+    <TextView
+        android:id="@+id/lblNumIdRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="serif"
+        android:text="Número de identificación"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNumIdRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNumIdRP"
+        android:layout_width="233dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="20dp"
+        android:ems="8"
+        android:fontFamily="serif"
+        android:hint="Digite su identificación"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNomRP3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="Nombres"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextNomRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextNomRP"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite su nombre"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblApellidoRP3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApellidoRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:fontFamily="serif"
+        android:text="Apellidos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextApelRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextApelRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite sus apellidos"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="serif"
+        android:text="Fecha de nacimiento"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextFechaNacRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextFechaNacRP"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblGenRP3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spRhRp"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="36dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/edttextPasswordRP"
+        app:layout_constraintStart_toEndOf="@+id/spGeneroRP" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="serif"
+        android:text="RH"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spRhRp"
+        app:layout_constraintStart_toEndOf="@+id/lblGenRP3" />
+
+    <TextView
+        android:id="@+id/lblGenRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="3dp"
+        android:text="Género"
+        app:layout_constraintBottom_toTopOf="@+id/spGeneroRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spGeneroRP"
+        android:layout_width="141dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPasswordRP3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPasswordRP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="serif"
+        android:text="Contraseña"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edttextPasswordRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edttextPasswordRP"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite contraseña para su sesion"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistroRP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistroRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="serif"
+        android:text="Registrase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

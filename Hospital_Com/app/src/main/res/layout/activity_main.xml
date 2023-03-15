@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblOlvidarPassLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:text="¿Has olvidado su contraseña?"
+        android:textColor="#12428A"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresarLI" />
+
+    <TextView
+        android:id="@+id/lblTituloLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#F80000"
+        android:fontFamily="serif"
+        android:text="CLINICA DE LOS ALTOS DE LOS ANDES"
+        android:textColor="#ED0000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/lblRegisAdminLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:text="Registrarse como administrador."
+        android:textColor="#12428A"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegisMedLI" />
+
+    <EditText
+        android:id="@+id/edttextPassLI"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite su contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPassLI" />
+
+    <Button
+        android:id="@+id/btnIngresarLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="serif"
+        android:text="INGRESAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttextPassLI" />
+
+    <TextView
+        android:id="@+id/lblRegisPacLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:text="Registrarse como paciente."
+        android:textColor="#12428A"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblOlvidarPassLI" />
+
+    <EditText
+        android:id="@+id/edttextUsuarioLI"
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Digite su usuario(cedula)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUsuarioLI" />
+
+    <TextView
+        android:id="@+id/lblPassLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="CONTRASEÑA:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edttextUsuarioLI" />
+
+    <TextView
+        android:id="@+id/lblRegisMedLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:includeFontPadding="false"
+        android:text="Registrarse como medico."
+        android:textColor="#12428A"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegisPacLI" />
+
+    <TextView
+        android:id="@+id/lblUsuarioLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="47dp"
+        android:fontFamily="serif"
+        android:text="USUARIO:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloLI" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hospital" />
+</androidx.constraintlayout.widget.ConstraintLayout>
